@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.n2god.mvc.controller.NotepadController">
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pl.n2god.mvc.controller.MainPaneController">
    <children>
-      <HBox VBox.vgrow="ALWAYS">
-         <children>
-            <TextArea fx:id="originalTextArea" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-            <TextArea fx:id="reversedTextArea" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-         </children>
-      </HBox>
-      <Button fx:id="clearTextButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clearText" text="Clear windows" VBox.vgrow="NEVER" />
+      <fx:include fx:id="contentPane" source="contentPane.fxml" />
+      <fx:include fx:id="controlPane" source="controlPane.fxml" />
    </children>
 </VBox>
