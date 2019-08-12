@@ -21,3 +21,7 @@
         </children>
     </HBox>
 </AnchorPane>
+
+<stylesheets>
+<URL value="@sciezka_do_pliku.css" />
+</stylesheets>
