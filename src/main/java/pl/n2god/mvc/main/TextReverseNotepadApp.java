@@ -19,7 +19,7 @@ public class TextReverseNotepadApp extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/maiPane.fxml"));
+        VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/mainPane.fxml"));
         Scene scene = new Scene(mainPane);
         stage.setScene(scene);
         stage.setTitle("Events Example");
