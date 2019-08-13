@@ -1,27 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="pl.n2god.mvc.controller.ContentPaneController">
-    <HBox VBox.vgrow="ALWAYS">
-        <children>
-            <TextArea fx:id="originalTextArea"
-                      prefHeight="200.0" prefWidth="200.0"
-                      HBox.hgrow="ALWAYS"/>
-            <TextArea fx:id="reversedTextArea"
-                      prefHeight="200.0"
-                      prefWidth="200.0"
-                      HBox.hgrow="ALWAYS"/>
-        </children>
-    </HBox>
-</AnchorPane>
 
-<stylesheets>
-<URL value="@sciezka_do_pliku.css" />
-</stylesheets>
+<HBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.n2god.mvc.controller.ContentPaneController">
+   <children>
+         <TextArea id="text-area-1" fx:id="originalTextArea" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         <TextArea id="text-area-2" fx:id="reversedTextArea" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+   </children>
+</HBox>
